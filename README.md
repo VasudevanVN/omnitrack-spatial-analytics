@@ -4,7 +4,7 @@
 OmniTrack is a computer vision and spatial analytics product designed for automated warehouse logistics and industrial safety monitoring. The system ingests video feeds, tracks high-value assets (machinery, forklifts, workers), and calculates real-time geometric geofence violations to prevent workplace hazards.
 
 ## 🚀 Live Production Demo
-👉 **[CLICK HERE TO ACCESS THE LIVE APP](PASTE_YOUR_STREAMLIT_URL_HERE)** *(Please download the sample clip from the repo or use any mp4 transit video to test)*
+👉 **[CLICK HERE TO ACCESS THE LIVE APP](https://omnitrack-spatial-analytics-ckvvssstpbrcshc9zbmy9p.streamlit.app/)** *(Please download the sample clip from the repo or use any mp4 transit video to test)*
 
 ## 🛠️ Key Technical Features
 * **Multi-Object Tracking (MOT):** Implements temporal tracking IDs leveraging deep learning abstractions to persistently monitor assets under occlusions.
