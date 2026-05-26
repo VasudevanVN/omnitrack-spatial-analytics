@@ -27,7 +27,7 @@ OmniTrack is a computer vision and spatial analytics product designed for automa
 ## 🔬 System Architecture Logic
 
 **The application pipeline breaks down into three distinct asynchronous processing steps:**
-1 Object Detection & Tracking: Frames are normalized to $640 \times 480$ pixel matrices and parsed by YOLO to output   temporal bounding box coordinates.
-2 Spatial Coordinate Transform: The engine extracts the base midpoint of the bounding box vector:
-                                $$\text{Point} = \left(\frac{x_1 + x_2}{2}, y_2\right)$$
-3 Geometric Membership Evaluation: A Shapely polygon execution loop evaluates whether the calculated Point vector intersects the static boundary vertices using ray-casting spatial algorithms.
+*1 Object Detection & Tracking: Frames are normalized to $640 \times 480$ pixel matrices and parsed by YOLO to output   temporal bounding box coordinates.
+*2 Spatial Coordinate Transform: The engine extracts the base midpoint of the bounding box vector:
+                                *$$\text{Point} = \left(\frac{x_1 + x_2}{2}, y_2\right)$$
+*3 Geometric Membership Evaluation: A Shapely polygon execution loop evaluates whether the calculated Point vector intersects the static boundary vertices using ray-casting spatial algorithms.
