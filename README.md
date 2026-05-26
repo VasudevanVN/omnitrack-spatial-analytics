@@ -18,3 +18,16 @@ OmniTrack is a computer vision and spatial analytics product designed for automa
    ```bash
    git clone [https://github.com/VasudevanVN/omnitrack-spatial-analytics.git](https://github.com/VasudevanVN/omnitrack-spatial-analytics.git)
    cd omnitrack-spatial-analytics
+2. **Install Infrastructure Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+3. **Execute the Application Engine:**
+   ```bash
+   streamlit run app.py
+## 🔬 System Architecture Logic
+
+**The application pipeline breaks down into three distinct asynchronous processing steps:**
+1 Object Detection & Tracking: Frames are normalized to $640 \times 480$ pixel matrices and parsed by YOLO to output   temporal bounding box coordinates.
+2 Spatial Coordinate Transform: The engine extracts the base midpoint of the bounding box vector:
+                                $$\text{Point} = \left(\frac{x_1 + x_2}{2}, y_2\right)$$
+3 Geometric Membership Evaluation: A Shapely polygon execution loop evaluates whether the calculated Point vector intersects the static boundary vertices using ray-casting spatial algorithms.
